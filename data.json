@@ -58,7 +58,8 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/version",
         "metadataMappings": [
-            "owl:versionInfo:http://www.w3.org/2002/07/owl#VersionInfo",
+            {"label": "owl:versionInfo",
+            "label_uri": "http://www.w3.org/2002/07/owl#VersionInfo"},
             "mod:version:http://www.isibang.ac.in/ns/mod/1.0/version",
             "doap:release:http://usefulinc.com/ns/doap/release",
             "pav:version:http://purl.org/pav/version",
