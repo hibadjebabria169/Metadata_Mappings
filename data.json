@@ -602,7 +602,7 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/uriRegexPattern",
         "metadataMappings": [
-            "idot:identifierPatternhttp://identifiers.org/idot/identifierPattern"
+            "idot:identifierPattern:http://identifiers.org/idot/identifierPattern"
         ]
     },
     {
