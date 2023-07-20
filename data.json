@@ -33,11 +33,18 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/obsoleteParent",
-        "metadataMappings": [
-            "doap:download-page",
-            "dcat:accessURL",
-            "omv:resourceLocator"
-        ]
+       "metadataMappings": [
+    {
+        "label": "doap:download-page"
+    },
+    {
+        "label": "dcat:accessURL"
+    },
+    {
+        "label": "omv:resourceLocator"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/createdProperty",
@@ -133,79 +140,179 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasOntologySyntax",
-        "metadataMappings": [
-            "mod:syntax:http://www.isibang.ac.in/ns/mod/1.0/syntax",
-            "dct:format:http://purl.org/dc/elements/1.1/format"
-        ]
+       "metadataMappings": [
+    {
+        "label": "mod:syntax",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/syntax"
+    },
+    {
+        "label": "dct:format",
+        "label_uri": "http://purl.org/dc/elements/1.1/format"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/naturalLanguage",
-        "metadataMappings": [
-            "dct:language:http://purl.org/dc/elements/1.1/language",
-            "doap:language:http://usefulinc.com/ns/doap/language",
-            "schema:inLanguage:http://schema.org/inLanguage"
-        ]
+       "metadataMappings": [
+    {
+        "label": "dct:language",
+        "label_uri": "http://purl.org/dc/elements/1.1/language"
+    },
+    {
+        "label": "doap:language",
+        "label_uri": "http://usefulinc.com/ns/doap/language"
+    },
+    {
+        "label": "schema:inLanguage",
+        "label_uri": "http://schema.org/inLanguage"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/isOfType",
-        "metadataMappings": [
-            "dc:type:http://purl.org/dc/elements/1.1/type",
-            "dct:type:http://purl.org/dc/elements/1.1/type"
-        ]
+       "metadataMappings": [
+    {
+        "label": "dc:type",
+        "label_uri": "http://purl.org/dc/elements/1.1/type"
+    },
+    {
+        "label": "dct:type",
+        "label_uri": "http://purl.org/dc/elements/1.1/type"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/identifier",
         "metadataMappings": [
-            "dc:identifier:http://purl.org/dc/elements/1.1/identifier",
-            "skos:notation:https://www.w3.org/2009/08/skos-reference/skos.html#notation",
-            "adms:identifier:https://www.w3.org/TR/vocab-adms/#adms-identifier",
-            "schema:identifier:https://schema.org/identifier"
-        ]
+    {
+        "label": "dc:identifier",
+        "label_uri": "http://purl.org/dc/elements/1.1/identifier"
+    },
+    {
+        "label": "skos:notation",
+        "label_uri": "https://www.w3.org/2009/08/skos-reference/skos.html#notation"
+    },
+    {
+        "label": "adms:identifier",
+        "label_uri": "https://www.w3.org/TR/vocab-adms/#adms-identifier"
+    },
+    {
+        "label": "schema:identifier",
+        "label_uri": "https://schema.org/identifier"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/description",
-        "metadataMappings": [
-            "dct:description:http://purl.org/dc/terms/description",
-            "rdfs:comment:http://www.w3.org/2000/01/rdf-schema#",
-            "doap:description:http://usefulinc.com/ns/doap#description",
-            "schema:description:http://schema.org/description",
-            "oboInOwl:remark"
-        ]
+       "metadataMappings": [
+    {
+        "label": "dct:description",
+        "label_uri": "http://purl.org/dc/terms/description"
+    },
+    {
+        "label": "rdfs:comment",
+        "label_uri": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+        "label": "doap:description",
+        "label_uri": "http://usefulinc.com/ns/doap#description"
+    },
+    {
+        "label": "schema:description",
+        "label_uri": "http://schema.org/description"
+    },
+    {
+        "label": "oboInOwl:remark"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/homepage",
-        "metadataMappings": [
-            "cc:attributionURL:http://creativecommons.org/ns#attributionUR",
-            "mod:homepage:http://www.isibang.ac.in/ns/mod/1.0/homepage",
-            "doap:blog:http://usefulinc.com/ns/doap#blog",
-            "schema:mainEntityOfPage:http://schema.org/mainEntityOfPage"
-        ]
+       "metadataMappings": [
+    {
+        "label": "cc:attributionURL",
+        "label_uri": "http://creativecommons.org/ns#attributionUR"
+    },
+    {
+        "label": "mod:homepage",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/homepage"
+    },
+    {
+        "label": "doap:blog",
+        "label_uri": "http://usefulinc.com/ns/doap#blog"
+    },
+    {
+        "label": "schema:mainEntityOfPage",
+        "label_uri": "http://schema.org/mainEntityOfPage"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/documentation",
-        "metadataMappings": [
-            "rdfs:seeAlso:http://www.w3.org/2000/01/rdf-schema#seeAlso",
-            "foaf:page:http://xmlns.com/foaf/0.1/page",
-            "vann:usageNote:https://vocab.org/vann/usageNote",
-            "mod:document:http://www.isibang.ac.in/ns/mod/1.0/document",
-            "dcat:landingPage:https://www.w3.org/ns/dcat#llandingPage",
-            "doap:wiki:http://usefulinc.com/ns/doap#wiki"
-        ]
+       "metadataMappings": [
+    {
+        "label": "rdfs:seeAlso",
+        "label_uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    {
+        "label": "foaf:page",
+        "label_uri": "http://xmlns.com/foaf/0.1/page"
+    },
+    {
+        "label": "vann:usageNote",
+        "label_uri": "https://vocab.org/vann/usageNote"
+    },
+    {
+        "label": "mod:document",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/document"
+    },
+    {
+        "label": "dcat:landingPage",
+        "label_uri": "https://www.w3.org/ns/dcat#llandingPage"
+    },
+    {
+        "label": "doap:wiki",
+        "label_uri": "http://usefulinc.com/ns/doap#wiki"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/notes",
-        "metadataMappings": [
-            "rdfs:comment:http://www.w3.org/2000/01/rdf-schema#",
-            "adms:versionNotes"
-        ]
+       "metadataMappings": [
+    {
+        "label": "rdfs:comment",
+        "label_uri": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+        "label": "adms:versionNotes"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/keywords",
-        "metadataMappings": [
-            "mod:keyword:http://www.isibang.ac.in/ns/mod/1.1/keyword",
-            "dcat:keyword:http://www.w3.org/ns/dcat#keyword",
-            "schema:keywords:http://schema.org/keywords"
-        ]
+       "metadataMappings": [
+    {
+        "label": "mod:keyword",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.1/keyword"
+    },
+    {
+        "label": "dcat:keyword",
+        "label_uri": "http://www.w3.org/ns/dcat#keyword"
+    },
+    {
+        "label": "schema:keywords",
+        "label_uri": "http://schema.org/keywords"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hiddenLabel",
@@ -213,12 +320,24 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/alternative",
-        "metadataMappings": [
-            "skos:altLabel:http://www.w3.org/2004/02/skos/core#altLabel",
-            "idot:alternatePrefix:http://identifiers.org/idot/",
-            "schema:alternativeHeadline",
-            "schema:alternateName:http://schema.org/alternateName"
-        ]
+       "metadataMappings": [
+    {
+        "label": "skos:altLabel",
+        "label_uri": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    {
+        "label": "idot:alternatePrefix",
+        "label_uri": "http://identifiers.org/idot/"
+    },
+    {
+        "label": "schema:alternativeHeadline"
+    },
+    {
+        "label": "schema:alternateName",
+        "label_uri": "http://schema.org/alternateName"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/abstract",
@@ -227,13 +346,29 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/publication",
         "metadataMappings": [
-            "omv:reference:http://omv.ontoware.org/2005/05/ontology#reference",
-            "dct:bibliographicCitation",
-            "foaf:isPrimaryTopicOf:http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
-            "schema:citation:https://schema.org/citation",
-            "cito:citesAsAuthority",
-            "schema:citation"
-        ]
+    {
+        "label": "omv:reference",
+        "label_uri": "http://omv.ontoware.org/2005/05/ontology#reference"
+    },
+    {
+        "label": "dct:bibliographicCitation"
+    },
+    {
+        "label": "foaf:isPrimaryTopicOf",
+        "label_uri": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf"
+    },
+    {
+        "label": "schema:citation",
+        "label_uri": "https://schema.org/citation"
+    },
+    {
+        "label": "cito:citesAsAuthority"
+    },
+    {
+        "label": "schema:citation"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasLicense",
