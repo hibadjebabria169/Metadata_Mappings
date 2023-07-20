@@ -372,13 +372,17 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasLicense",
-        "metadataMappings": [
-            "dc:rights:http://purl.org/dc/elements/1.1/rights",
-            "dct:rights:http://purl.org/dc/terms/license",
-            "dct:license:http://purl.org/dc/terms/license",
-            "cc:license:http://omv.ontoware.org/2005/05/ontology#hasLicense",
-            "schema:license:http://schema.org/license"
-        ]
+        [
+  {
+    "@id": "metadataMappings",
+    "metadataMappings": [
+      {"label": "dc:rights", "label_uri": "http://purl.org/dc/elements/1.1/rights"},
+      {"label": "dct:rights", "label_uri": "http://purl.org/dc/terms/license"},
+      {"label": "dct:license", "label_uri": "http://purl.org/dc/terms/license"},
+      {"label": "cc:license", "label_uri": "http://omv.ontoware.org/2005/05/ontology#hasLicense"},
+      {"label": "schema:license", "label_uri": "http://schema.org/license"}
+    ]
+  }
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/useGuidelines",
@@ -395,26 +399,26 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/released",
         "metadataMappings": [
-            "omv:creationDate",
-            "dct:date:http://purl.org/dc/elements/1.1/date",
-            "dct:issued:http://purl.org/dc/terms/issued",
-            "mod:creationDate:http://www.isibang.ac.in/ns/mod/1.1/creationDate",
-            "doap:created:http://usefulinc.com/ns/doap#created",
-            "schema:dateCreated:https://schema.org/",
-            "prov:generatedAtTime:http://www.w3.org/ns/prov#generatedAtTime",
-            "pav:createdOn:http://purl.org/pav/",
-            "pav:authoredO:http://purl.org/pav/",
-            "pav:contributedOn:http://purl.org/pav/",
-            "oboInOwl:date:http://www.geneontology.org/formats/oboInOwl#date",
-            "oboInOwl:hasDate:http://www.geneontology.org/formats/oboInOwl#hasDate"
-        ]
+      {"label": "omv:creationDate", "label_uri": null},
+      {"label": "dct:date", "label_uri": "http://purl.org/dc/elements/1.1/date"},
+      {"label": "dct:issued", "label_uri": "http://purl.org/dc/terms/issued"},
+      {"label": "mod:creationDate", "label_uri": "http://www.isibang.ac.in/ns/mod/1.1/creationDate"},
+      {"label": "doap:created", "label_uri": "http://usefulinc.com/ns/doap#created"},
+      {"label": "schema:dateCreated", "label_uri": "https://schema.org/"},
+      {"label": "prov:generatedAtTime", "label_uri": "http://www.w3.org/ns/prov#generatedAtTime"},
+      {"label": "pav:createdOn", "label_uri": "http://purl.org/pav/"},
+      {"label": "pav:authoredO", "label_uri": "http://purl.org/pav/"},
+      {"label": "pav:contributedOn", "label_uri": "http://purl.org/pav/"},
+      {"label": "oboInOwl:date", "label_uri": "http://www.geneontology.org/formats/oboInOwl#date"},
+      {"label": "oboInOwl:hasDate", "label_uri": "http://www.geneontology.org/formats/oboInOwl#hasDate"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/valid",
         "metadataMappings": [
-            "prov:invaliatedAtTime:http://www.w3.org/ns/prov#invalidatedAtTime",
-            "schema:endDate:http://schema.org/endDate"
-        ]
+      {"label": "prov:invaliatedAtTime", "label_uri": "http://www.w3.org/ns/prov#invalidatedAtTime"},
+      {"label": "schema:endDate", "label_uri": "http://schema.org/endDate"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/curatedOn",
@@ -422,19 +426,19 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/creationDate",
-        "metadataMappings": [
-            "dct:dateSubmitted:http://purl.org/dc/terms/dateSubmitted",
-            "schema:datePublished:http://schema.org/datePublished"
-        ]
+       "metadataMappings": [
+      {"label": "dct:dateSubmitted", "label_uri": "http://purl.org/dc/terms/dateSubmitted"},
+      {"label": "schema:datePublished", "label_uri": "http://schema.org/datePublished"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/modificationDate",
         "metadataMappings": [
-            "dct:modified",
-            "schema:dateModified:http://schema.org/dateModified",
-            "pav:lastUpdateOn:http://purl.org/pav/",
-            "mod:updated:http://omv.ontoware.org/2005/05/ontology#modificationDate"
-        ]
+      {"label": "dct:modified", "label_uri": null},
+      {"label": "schema:dateModified", "label_uri": "http://schema.org/dateModified"},
+      {"label": "pav:lastUpdateOn", "label_uri": "http://purl.org/pav/"},
+      {"label": "mod:updated", "label_uri": "http://omv.ontoware.org/2005/05/ontology#modificationDate"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/contact",
@@ -443,69 +447,69 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasCreator",
         "metadataMappings": [
-            "dc:creator",
-            "dct:creator:http://purl.org/dc/terms/",
-            "foaf:maker:http://xmlns.com/foaf/0.1/",
-            "prov:wasAttributedTo:http://www.w3.org/ns/prov#wasAttributedTo",
-            "doap:maintainer:http://usefulinc.com/ns/doap#maintainer",
-            "pav:authoredBy:http://purl.org/pav/authoredBy",
-            "pav:createdBy:http://purl.org/pav/createdBy",
-            "schema:author:http://schema.org/author",
-            "schema:creator"
-        ]
+      {"label": "dc:creator", "label_uri": null},
+      {"label": "dct:creator", "label_uri": "http://purl.org/dc/terms/"},
+      {"label": "foaf:maker", "label_uri": "http://xmlns.com/foaf/0.1/"},
+      {"label": "prov:wasAttributedTo", "label_uri": "http://www.w3.org/ns/prov#wasAttributedTo"},
+      {"label": "doap:maintainer", "label_uri": "http://usefulinc.com/ns/doap#maintainer"},
+      {"label": "pav:authoredBy", "label_uri": "http://purl.org/pav/authoredBy"},
+      {"label": "pav:createdBy", "label_uri": "http://purl.org/pav/createdBy"},
+      {"label": "schema:author", "label_uri": "http://schema.org/author"},
+      {"label": "schema:creator", "label_uri": null}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasContributor",
         "metadataMappings": [
-            "dc:contributor",
-            "dct:contributor:http://purl.org/dc/terms/contributor",
-            "doap:helper:http://usefulinc.com/ns/doap#helper",
-            "schema:contributor:http://schema.org/contributor",
-            "pav:contributedBy:http://purl.org/pav/contributedBy",
-            "oboInOwl:http://www.geneontology.org/formats/oboInOwl#saved-by"
-        ]
+      {"label": "dc:contributor", "label_uri": null},
+      {"label": "dct:contributor", "label_uri": "http://purl.org/dc/terms/contributor"},
+      {"label": "doap:helper", "label_uri": "http://usefulinc.com/ns/doap#helper"},
+      {"label": "schema:contributor", "label_uri": "http://schema.org/contributor"},
+      {"label": "pav:contributedBy", "label_uri": "http://purl.org/pav/contributedBy"},
+      {"label": "oboInOwl", "label_uri": "http://www.geneontology.org/formats/oboInOwl#saved-by"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/curatedBy",
         "metadataMappings": [
-            "mod:evaluatedBy",
-            "pav:curatedBy:http://purl.org/pav/"
-        ]
+      {"label": "mod:evaluatedBy", "label_uri": null},
+      {"label": "pav:curatedBy", "label_uri": "http://purl.org/pav/"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/publisher",
         "metadataMappings": [
-            "dc:publisher",
-            "adms:schemaAgency:http://www.w3.org/ns/adms#schemaAgency",
-            "schema:publisher:http://schema.org/publisher"
-        ]
+      {"label": "dc:publisher", "label_uri": null},
+      {"label": "adms:schemaAgency", "label_uri": "http://www.w3.org/ns/adms#schemaAgency"},
+      {"label": "schema:publisher", "label_uri": "http://schema.org/publisher"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/fundedBy",
-        "metadataMappings": [
-            "mod:sponsoredBy:http://www.isibang.ac.in/ns/mod/1.0/sponsoredBy",
-            "schema:sourceOrganization:http://schema.org/sourceOrganization"
-        ]
+         "metadataMappings": [
+      {"label": "mod:sponsoredBy", "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/sponsoredBy"},
+      {"label": "schema:sourceOrganization", "label_uri": "http://schema.org/sourceOrganization"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/endorsedBy",
-        "metadataMappings": [
-            "mod:endorsedBy:https://w3id.org/mod#"
-        ]
+       "metadataMappings": [
+      {"label": "mod:endorsedBy", "label_uri": "https://w3id.org/mod#"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/translator",
-        "metadataMappings": [
-            "doap:translator",
-            "schema:translator:https://schema.org/"
-        ]
+       "metadataMappings": [
+      {"label": "doap:translator", "label_uri": ""},
+      {"label": "schema:translator", "label_uri": "https://schema.org/"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/audience",
-        "metadataMappings": [
-            "doap:audience:http://usefulinc.com/ns/doap#audience",
-            "schema:audience:http://schema.org/audience"
-        ]
+       "metadataMappings": [
+      {"label": "doap:audience", "label_uri": "http://usefulinc.com/ns/doap#audience"},
+      {"label": "schema:audience", "label_uri": "http://schema.org/audience"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/repository",
@@ -537,49 +541,49 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasDomain",
-        "metadataMappings": [
-            "dc:subject",
-            "dct:subject:http://purl.org/dc/elements/1.1/subject",
-            "foaf:topic:http://xmlns.com/foaf/0.1/topic",
-            "dcat:theme",
-            "schema:about:http://schema.org/about"
-        ]
+       "metadataMappings": [
+      {"label": "dc:subject", "label_uri": ""},
+      {"label": "dct:subject", "label_uri": "http://purl.org/dc/elements/1.1/subject"},
+      {"label": "foaf:topic", "label_uri": "http://xmlns.com/foaf/0.1/topic"},
+      {"label": "dcat:theme", "label_uri": ""},
+      {"label": "schema:about", "label_uri": "http://schema.org/about"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/coverage",
-        "metadataMappings": [
-            "dc:coverage",
-            "schema:spatial:http://schema.org/spatial"
-        ]
+       "metadataMappings": [
+      {"label": "dc:coverage", "label_uri": ""},
+      {"label": "schema:spatial", "label_uri": "http://schema.org/spatial"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/example",
-        "metadataMappings": [
-            "schema:workExample:http://schema.org/workExample"
-        ]
+         "metadataMappings": [
+      {"label": "schema:workExample", "label_uri": "http://schema.org/workExample"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/conformsToKnowledgeRepresentationParadigm",
         "metadataMappings": [
-            "mod:KnowledgeRepresentationFormalism",
-            "dct:conformsTo:http://purl.org/dc/terms/"
-        ]
+      {"label": "mod:KnowledgeRepresentationFormalism", "label_uri": null},
+      {"label": "dct:conformsTo", "label_uri": "http://purl.org/dc/terms/"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/usedOntologyEngineeringMethodology",
-        "metadataMappings": [
-            "mod:methodologyUsed:http://www.isibang.ac.in/ns/mod/1.1/methodologyUsed",
-            "adms:representationTechnique:http://www.w3.org/ns/adms#representationTechnique",
-            "schema:publishingPrinciples:http://schema.org/publishingPrinciples"
-        ]
+       "metadataMappings": [
+      {"label": "mod:methodologyUsed", "label_uri": "http://www.isibang.ac.in/ns/mod/1.1/methodologyUsed"},
+      {"label": "adms:representationTechnique", "label_uri": "http://www.w3.org/ns/adms#representationTechnique"},
+      {"label": "schema:publishingPrinciples", "label_uri": "http://schema.org/publishingPrinciples"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/usedOntologyEngineeringTool",
-        "metadataMappings": [
-            "mod:toolUsed:http://www.isibang.ac.in/ns/mod/1.1/toolUsed",
-            "pav:createdWith:http://purl.org/pav/createdWith",
-            "oboInOwl:auto-generated-by:http://www.geneontology.org/formats/oboInOwl#auto-generated-by"
-        ]
+       "metadataMappings": [
+      {"label": "mod:toolUsed", "label_uri": "http://www.isibang.ac.in/ns/mod/1.1/toolUsed"},
+      {"label": "pav:createdWith", "label_uri": "http://purl.org/pav/createdWith"},
+      {"label": "oboInOwl:auto-generated-by", "label_uri": "http://www.geneontology.org/formats/oboInOwl#auto-generated-by"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/accrualMethod",
@@ -588,8 +592,8 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/accrualPeriodicity",
         "metadataMappings": [
-            "nkos:updateFrequency"
-        ]
+      {"label": "nkos:updateFrequency", "label_uri": null}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/accrualPolicy",
@@ -609,11 +613,11 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/pullLocation",
-        "metadataMappings": [
-            "doap:download-page:http://usefulinc.com/ns/doap/download-page",
-            "dcat:accessURL:http://www.w3.org/ns/dca#",
-            "omv:resourceLocator:http://omv.ontoware.org/2005/05/ontology#resourceLocator"
-        ]
+       "metadataMappings": [
+      {"label": "doap:download-page", "label_uri": "http://usefulinc.com/ns/doap/download-page"},
+      {"label": "dcat:accessURL", "label_uri": "http://www.w3.org/ns/dca#"},
+      {"label": "omv:resourceLocator", "label_uri": "http://omv.ontoware.org/2005/05/ontology#resourceLocator"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/isFormatOf",
@@ -625,10 +629,10 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/dataDump",
-        "metadataMappings": [
-            "schema:distributio:http://schema.org/distribution",
-            "doap:download-mirror:http://usefulinc.com/ns/doap#download-mirror"
-        ]
+       "metadataMappings": [
+      {"label": "schema:distribution", "label_uri": "http://schema.org/distribution"},
+      {"label": "doap:download-mirror", "label_uri": "http://usefulinc.com/ns/doap#download-mirror"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/csvDump",
@@ -641,26 +645,26 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/openSearchDescription",
         "metadataMappings": [
-            "doap:service-endpoint"
-        ]
+      {"label": "doap:service-endpoint", "label_uri": null}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/source",
-        "metadataMappings": [
-            "dc:source:http://purl.org/dc/elements/1.1/source",
-            "prov:wasInfluencedBy:http://www.w3.org/ns/prov#wasInfluencedBy",
-            "prov:wasDerivedFrom:http://www.w3.org/ns/prov#wasDerivedFrom",
-            "pav:derivedFrom:http://purl.org/pav/",
-            "schema:isBasedOn:http://schema.org/isBasedOn",
-            "nkos:basedOn:http://w3id.org/nkos#",
-            "mod:sourceOntology"
-        ]
+       "metadataMappings": [
+      {"label": "dc:source", "label_uri": "http://purl.org/dc/elements/1.1/source"},
+      {"label": "prov:wasInfluencedBy", "label_uri": "http://www.w3.org/ns/prov#wasInfluencedBy"},
+      {"label": "prov:wasDerivedFrom", "label_uri": "http://www.w3.org/ns/prov#wasDerivedFrom"},
+      {"label": "pav:derivedFrom", "label_uri": "http://purl.org/pav/"},
+      {"label": "schema:isBasedOn", "label_uri": "http://schema.org/isBasedOn"},
+      {"label": "nkos:basedOn", "label_uri": "http://w3id.org/nkos#"},
+      {"label": "mod:sourceOntology", "label_uri": null}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/endpoint",
-        "metadataMappings": [
-            "void:sparqlEndpoint:http://rdfs.org/ns/void#sparqlEndpoint"
-        ]
+         "metadataMappings": [
+      {"label": "void:sparqlEndpoint", "label_uri": "http://rdfs.org/ns/void#sparqlEndpoint"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/includedInDataCatalog",
@@ -668,16 +672,16 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasPriorVersion",
-        "metadataMappings": [
-            "owl:priorVersion",
-            "dct:isVersionOf:http://purl.org/dc/terms/isVersionOf",
-            "door:priorVersion:http://kannel.open.ac.uk/ontology#priorVersion",
-            "prov:wasRevisionOf:https://www.w3.org/ns/prov#wasRevisionOf",
-            "adms:prev:http://www.w3.org/ns/adms#prev",
-            "pav:previousVersion",
-            "pav:hasEarlierVersion",
-            "owl:PriorVersion:http://www.w3.org/2002/07/owl#PriorVersion"
-        ]
+       "metadataMappings": [
+      {"label": "owl:priorVersion", "label_uri": ""},
+      {"label": "dct:isVersionOf", "label_uri": "http://purl.org/dc/terms/isVersionOf"},
+      {"label": "door:priorVersion", "label_uri": "http://kannel.open.ac.uk/ontology#priorVersion"},
+      {"label": "prov:wasRevisionOf", "label_uri": "https://www.w3.org/ns/prov#wasRevisionOf"},
+      {"label": "adms:prev", "label_uri": "http://www.w3.org/ns/adms#prev"},
+      {"label": "pav:previousVersion", "label_uri": ""},
+      {"label": "pav:hasEarlierVersion", "label_uri": ""},
+      {"label": "owl:PriorVersion", "label_uri": "http://www.w3.org/2002/07/owl#PriorVersion"}
+    ]
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasPart",
