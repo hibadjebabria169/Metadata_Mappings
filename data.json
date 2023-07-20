@@ -57,30 +57,65 @@
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/version",
-        "metadataMappings": [
-            {"label": "owl:versionInfo",
-            "label_uri": "http://www.w3.org/2002/07/owl#VersionInfo"},
-            "mod:version:http://www.isibang.ac.in/ns/mod/1.0/version",
-            "doap:release:http://usefulinc.com/ns/doap/release",
-            "pav:version:http://purl.org/pav/version",
-            "schema:version:https://schema.org/version",
-            "oboInOwl:data-version:http://www.geneontology.org/formats/oboInOwl#data-version",
-            "oboInOwl:version:http://www.geneontology.org/formats/oboInOwl#hasVersio",
-            "adms:last:http://www.w3.org/ns/adms#last"
-        ]
+      "metadataMappings": [
+    {
+        "label": "owl:versionInfo",
+        "label_uri": "http://www.w3.org/2002/07/owl#VersionInfo"
+    },
+    {
+        "label": "mod:version",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/version"
+    },
+    {
+        "label": "doap:release",
+        "label_uri": "http://usefulinc.com/ns/doap/release"
+    },
+    {
+        "label": "pav:version",
+        "label_uri": "http://purl.org/pav/version"
+    },
+    {
+        "label": "schema:version",
+        "label_uri": "https://schema.org/version"
+    },
+    {
+        "label": "oboInOwl:data-version",
+        "label_uri": "http://www.geneontology.org/formats/oboInOwl#data-version"
+    },
+    {
+        "label": "oboInOwl:version",
+        "label_uri": "http://www.geneontology.org/formats/oboInOwl#hasVersio"
+    },
+    {
+        "label": "adms:last",
+        "label_uri": "http://www.w3.org/ns/adms#last"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/status",
         "metadataMappings": [
-            "adms:status:https://www.w3.org/TR/vocab-adms/#adms-status",
-            "idot:state:https://identifiers.org/idot:state"
-        ]
+    {
+        "label": "adms:status",
+        "label_uri": "https://www.w3.org/TR/vocab-adms/#adms-status"
+    },
+    {
+        "label": "idot:state",
+        "label_uri": "https://identifiers.org/idot:state"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/deprecated",
-        "metadataMappings": [
-            "idot:obsolete:http://identifiers.org/idot/obsolete"
-        ]
+       "metadataMappings": [
+    {
+        "label": "idot:obsolete",
+        "label_uri": "http://identifiers.org/idot/obsolete"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasOntologyLanguage",
@@ -89,8 +124,12 @@
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasFormalityLevel",
         "metadataMappings": [
-            "mod:ontologyFormalityLevel:http://www.isibang.ac.in/ns/mod/1.0/formalityLevel"
-        ]
+    {
+        "label": "mod:ontologyFormalityLevel",
+        "label_uri": "http://www.isibang.ac.in/ns/mod/1.0/formalityLevel"
+    }
+]
+
     },
     {
         "@id": "http://data.bioontology.org/submission_metadata/hasOntologySyntax",
